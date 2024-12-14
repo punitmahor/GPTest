@@ -35,8 +35,8 @@ jobs:
       - name: Restore Dependencies
         run: dotnet restore
 
-      - name: Build and Publish
-        run: dotnet publish -c Release -o output
+      - name: Publish API Project
+        run: dotnet publish ./YourProjectFolder/YourProject.csproj -c Release -o output
 
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
