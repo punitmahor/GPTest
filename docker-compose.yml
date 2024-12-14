@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  gptest:
+    image: ${DOCKER_REGISTRY-}gptest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
