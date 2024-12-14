@@ -1,0 +1,7 @@
+﻿@GPTest_HostAddress = http://localhost:5207
+
+GET {{GPTest_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
